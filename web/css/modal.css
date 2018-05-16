@@ -1,0 +1,16 @@
+.modal {
+	width:100%;
+	height: 100%;
+	position: fixed;
+}
+
+.modal-bg {
+	width:100%;
+	height:100%;
+	background-color: #0A1E33;
+	position: fixed;
+	top: 0px;
+	opacity: 0.4;
+	filter: Alpha(opacity="40");
+	
+}

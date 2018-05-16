@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	
+{% endblock %}
+
+{% block content %}
+
+
+<div class="modal">
+	<div class="modal-bg"></div>
+	<div class="modal-main">
+		<div id="login-panel">
+			{% embed 'login.twig' %}{% endembed %}
+		</div>
+		<div id="register-panel">
+			{% embed 'register.twig' %}{% endembed %}
+		</div>
+	</div>
+</div>
+{% endblock %}
+
