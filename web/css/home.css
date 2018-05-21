@@ -1,1 +1,57 @@
+#intro {
+	height: 200px;
+	background-color: white;
+}
+
+#explore {
+	background-color: white;
+}
+
+#explore span {
+	color: #3399FF;
+	text-shadow: 1px 1px 1px #0A1E33;
+	font-family: "Times New Roman", sans-serif;
+}
+
+#explore div div div:first-child  {
+	margin-bottom: 20px;
+}
+
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+table tbody tr td {
+	text-align:center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+td img {
+	margin: auto !important;
+	width: 150px;
+	height: 150px;
+}
+
+td label {
+	color: #3399FF;
+	font-family: "Times New Roman", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+input[type="text"]{
+	box-shadow: 1px 1px 1px #0A1E33;
+}
+
+form div input.btn-des {
+	margin-left: 20px;
+}
+
+.table-container {
+	margin-top: 50px;
+}
+
 
