@@ -1,0 +1,25 @@
+<form>
+	<div class="container">
+		<div class="row">
+			<span class="form-subtitle col-lg-12">Log In</span>
+			{% import 'functions.html' as forms %}
+			{% for log in home.login %}
+				<div class="{{ log.gclass }}">
+					{% if log.label is defined %}
+						<label for="{{ log.for }}">{{ log.label }} </label>
+					{% endif %}
+					{% if log.type == 'text' %}
+						{{ forms.textfield(log.name,log.class,log.placeholder,log.required) }}
+					{% else %}
+						{{ forms.input(log.name,log.class,log.type,log.placeholder,log.required) }}
+					{% endif %}
+				</div>	
+			{% endfor %}
+			<div class="form-group col-lg-9">
+				<span id="forgot-link" class="link">Forgot password?</span><span id="register-link" class="link"> Register?</span><br>
+				<input name="signed" type="checkbox" value="signed" checked> Stay signed in
+			</div>	
+			<input name="log-btn" class="btn-des col-lg-2 offset-lg-1" type="submit" value="Log In" />
+		</div>
+	</div>
+</form>

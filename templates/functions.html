@@ -1,0 +1,34 @@
+{# function for generating input element #}
+{% macro input(name,class,type,placeholder,require) %}
+	<input name="{{ name|e   }}" class="{{ class|e }}" type="{{ type|e }}" placeholder="{{ placeholder|default('') }}" {% if require == 'true' %} required {% endif %} />
+{% endmacro %}
+
+{# function for generating text input element  #}
+{% macro textfield(name,class,placeholder,require) %}
+	<input name="{{ name|e   }}" class="{{ class|e }}" type="text" placeholder="{{ placeholder|default('') }}" {% if require == 'true' %} required {% endif %}/>
+{% endmacro %}
+
+{# function for generating button input element #}
+{% macro buttonf(name,class,value) %}
+	<input name="{{ name|e }}" class="{{ class|e }}" type=submit" value="{{ value|e }}"/>
+{% endmacro %}
+
+{# function for generating select option #}
+{% macro options(id,values) %}
+	<select id="{{ id|e }}">
+		{% for value in values %}
+			<option>{{ value }}</option>
+		{% endfor %}
+	</select>
+{% endmacro %}
+
+{# function for generating textarea element #}
+{% macro textarea(name,class,rows,placeholder,require) %}
+	<textarea name="{{ name|e }}" class="{{ class|e }}" rows="{{ rows|e }}" placeholder="{{ placeholder|default('') }}" {% if require == 'true' %}required{% endif %}></textarea>
+{% endmacro %}
+
+{# function for generating input checkbox element #}
+{% macro checkbox(name,class,value,text,check) %}
+	<input name="{{ name|e }}" class="{{ class|e }}" type="checkbox" value="{{ value|e }}" {% if check == 'true' %}checked{% endif %}>{{ text|e }}<br>
+{% endmacro %}
+

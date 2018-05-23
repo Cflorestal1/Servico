@@ -26,12 +26,12 @@ $(function(){
 		
 		switch(data){
 			case 'registration':
-				$('#login-container').css('display','none')
-				$('#registration-container').css('display','block');
+				$('#login-panel').css('display','none')
+				$('#register-panel').css('display','block');
 				break;
 			case 'login':
-				$('#login-container').css('display','block')
-				$('#registration-container').css('display','none');
+				$('#login-panel').css('display','block')
+				$('#register-panel').css('display','none');
 				break;
 			default:
 				break;

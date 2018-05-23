@@ -31,6 +31,90 @@
 	];
 	
 	
+	$login = [
+
+		[
+			'gclass' => 'form-group col-lg-12 col-md-12 col-sm-12',
+			'label' => 'Username:',
+			'for' => 'username',
+			'type' => 'text',
+			'name' => 'username',
+			'class' => 'form-control',
+			'required' => 'true'
+		],
+		[
+			'gclass' => 'form-group col-lg-12 col-md-12 col-sm-12',
+			'label' => 'Password:',
+			'for' => 'password',
+			'type' => 'text',
+			'name' => 'password',
+			'class' => 'form-control',
+			'required' => 'true'
+		]
+	];
+
+	$register = [
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12',
+			'label'	=> 'First name:',
+			'for' => 'first-name',
+			'type' => 'text',
+			'name' => 'first-name',
+			'class' => 'form-control',
+			'required' => 'true'
+		],
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12',
+			'label'	=> 'Last name:',
+			'for' => 'last-name',
+			'type' => 'text',
+			'name' => 'last-name',
+			'class' => 'form-control',
+			'required' => 'true'
+
+		],
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12',
+			'label'	=> 'Email address:',
+			'for' => 'email',
+			'type' => 'email',
+			'name' => 'email',
+			'class' => 'form-control',
+			'required' => 'true'
+
+		],
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12',
+			'label'	=> 'Username:',
+			'for' => 'username',
+			'type' => 'text',
+			'name' => 'username',
+			'class' => 'form-control',
+			'required' => 'true'
+
+		],
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12 offset-lg-12',
+			'label'	=> 'Password:',
+			'for' => 'password',
+			'type' => 'text',
+			'name' => 'password',
+			'class' => 'form-control',
+			'required' => 'true'
+
+		],
+		[
+			'gclass' => 'form-group col-lg-6 col-md-6 col-sm-12',
+			'label'	=> 'Retype password:',
+			'for' => 'rpassword',
+			'type' => 'text',
+			'name' => 'rpassword',
+			'class' => 'form-control',
+			'required' => 'true'
+
+		]	
+	];
+	
 	$base = [ 'title' => 'Base'];
 	
 	$cusClass = ['img6' => 'img-responsive col-lg-'];
@@ -38,7 +122,10 @@
 	$home = [
 		'title' => 'Servico',
 		'logo' => '/Servico/web/img/logo.png',
-		'browse-pic' => '/Servico/web/img/browse/',	
+		'google-pic' => '/Servico/web/img/google-logo.png',
+		'browse-pic' => '/Servico/web/img/browse/',
+		'login' => $login,
+		'register' => $register	
 	];
 		
 	echo $twig->render('home.html', [

@@ -1,0 +1,28 @@
+<form>
+	<div class="container">
+		<div class="row">	
+			<span class="form-subtitle col-lg-12">Registration</span>	
+			{% import 'functions.html' as forms %}
+			{% for reg in home.register %}
+				{% if reg.name == 'username' %}<div class="border f-border"></div>{% endif %}
+				{% if reg.name == 'password' %}<div class="w-100"></div>{% endif %}
+				<div class="{{ reg.gclass }}">
+					{% if reg.label is defined %}
+						<label for="{{ reg.for }}">{{ reg.label }}</label>{% if reg.required == 'true' %} <span class="required">*</span>{% endif %}
+					{% endif %}
+					{% if reg.type == 'text' %}
+						{{ forms.textfield(reg.name,reg.class,reg.placeholder,reg.required) }}
+					{% else %}
+						{{ forms.input(reg.name,reg.class,reg.type,reg.placeholder,reg.required) }}
+					{% endif %}
+				</div>
+			{% endfor %}
+			<div class="marg"></div>
+			<div class="form-group col-lg-9">
+				<span id="google-register" class="link">Sign up with Google?</span>
+				<img class="img-responsive goo-pic" src="{{ home['google-pic'] }}" />
+			</div>
+			<input name="reg-btn" class="btn-des col-lg-2 offset-lg-1" type="submit" value="Register"/>
+		</div>
+	</div>
+</form>

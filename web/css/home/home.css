@@ -47,11 +47,41 @@ input[type="text"]{
 }
 
 form div input.btn-des {
-	margin-left: 20px;
+
+}
+
+form label {
+	font-family: "Times New Roman", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3399FF;
 }
 
 .table-container {
 	margin-top: 50px;
 }
 
+.link {
+	color: #19618B;
+	font-family: "Times New Roman", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
 
+.link:hover {
+	text-decoration: underline;
+}
+
+.form-subtitle {
+	color: #19618B;
+	font-family: "Times New Roman", sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.goo-pic {
+	width: 100px;
+	height: 41px;
+}
